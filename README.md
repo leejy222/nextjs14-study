@@ -1,1 +1,1 @@
-####### nextjs study *Ref Nomad-Coders
+# nextjs study *Ref Nomad-Coders
