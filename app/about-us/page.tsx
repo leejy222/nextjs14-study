@@ -1,4 +1,9 @@
-import Navigation from "../../components/navigation";
+export const metaData = {
+    title : {
+
+    },
+    description: "The best movies on the bit"
+}
 
 export default function Home() {
     return (

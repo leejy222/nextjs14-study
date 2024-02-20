@@ -1,3 +1,12 @@
-export default function SalesLayout() {
-  return <h1>Sales Salse!</h1>
-}
+export default function SalesLayout({
+    children,
+  }: {
+    children: React.ReactNode
+  }) {
+    return (
+      <div>
+          {children}
+          &copy; Sales Layout !!
+      </div>
+    )
+  }
