@@ -1,9 +1,6 @@
-export const metaData = {
-    title : {
-
-    },
-    description: "The best movies on the bit"
-}
+export const metadata = {
+    title: "About-us",
+  }
 
 export default function Home() {
     return (
