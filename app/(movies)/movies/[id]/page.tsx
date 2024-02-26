@@ -1,11 +1,24 @@
-export default function MovieDetail({
+import { Suspense } from "react";
+import { API_URL } from "../../../(home)/page" 
+import MovieInfo from "../../../../components/movie-info";
+import MovieVideos from "../../../../components/movie-videos";
+
+export default async function MovieDetail({
         params:{id}, 
     }: {
         params: {id:string}
     }) {
+        // const [movie, videos] = await Promise.all([getMovie(id),getVideos(id)])
     return (
-        <h1>
-            Movie! {id}
-        </h1>
+        <div>
+            <h1>Movie Detail Page</h1>
+            <Suspense fallback={<h1>Loading Movie Info...</h1>}>
+                <MovieInfo id={id} />
+            </Suspense>
+            <h1>Video</h1>
+            <Suspense fallback={<h1>Loading Movie Videos... </h1>}>
+                <MovieVideos id={id} />
+            </Suspense>
+        </div>            
     )
 }
