@@ -5,7 +5,7 @@ import "../styles/global.css"
 
 export const metadata :Metadata = {
   title: {
-    template: "%s | Next Movies",
+    template: "%s | Next Movies(JY)",
     default: "Next Movies"
   },
   description: 'The Best Movies on the best framework',
